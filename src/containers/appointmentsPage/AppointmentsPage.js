@@ -17,7 +17,7 @@ export const AppointmentsPage = (props) => {
     if (title === '' || contact==='Options' || date === '' || time === '') {
       alert('Please fill the empty input space')
     } else {
-      addAppointment(title, contact, date, time)
+      addAppointment(title, contact, date, time);
       setTitle('')
       setContact('Options')
       setDate('')
@@ -28,8 +28,7 @@ export const AppointmentsPage = (props) => {
 
   return (
     <div>
-{        console.log(contact)
-}
+
       <section>
         <h2>Add Appointment</h2>
         <AppointmentForm
